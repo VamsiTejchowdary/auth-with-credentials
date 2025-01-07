@@ -28,7 +28,6 @@ export default function RegisterForm() {
         },
         body: JSON.stringify({ email }),
       });
-
       const { user } = await resUserExists.json();
 
       if (user) {
